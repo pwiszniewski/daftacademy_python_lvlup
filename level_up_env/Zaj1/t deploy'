@@ -1,0 +1,45 @@
+[1mdiff --git a/hello.py b/hello.py[m
+[1mdeleted file mode 100644[m
+[1mindex 3130512..0000000[m
+[1m--- a/hello.py[m
+[1m+++ /dev/null[m
+[36m@@ -1,18 +0,0 @@[m
+[31m-from flask import Flask[m
+[31m-from flask import request[m
+[31m-[m
+[31m-app = Flask(__name__)[m
+[31m-[m
+[31m-[m
+[31m-@app.route('/')[m
+[31m-def hello():[m
+[31m-    return 'Hello, World!'[m
+[31m-[m
+[31m-[m
+[31m-@app.route('/request')[m
+[31m-def request_info():[m
+[31m-    return f'request method: {request.method} url: {request.url} headers: {request.headers}'[m
+[31m-[m
+[31m-[m
+[31m-if __name__ == '__main__':[m
+[31m-    app.run(debug=False)[m
+[1mdiff --git a/zad2/Procfile b/zad2/Procfile[m
+[1mdeleted file mode 100644[m
+[1mindex 8001d1a..0000000[m
+[1m--- a/zad2/Procfile[m
+[1m+++ /dev/null[m
+[36m@@ -1 +0,0 @@[m
+[31m-web: gunicorn app:app[m
+\ No newline at end of file[m
+[1mdiff --git a/zad2/requirements.txt b/zad2/requirements.txt[m
+[1mdeleted file mode 100644[m
+[1mindex 46f9fe5..0000000[m
+[1m--- a/zad2/requirements.txt[m
+[1m+++ /dev/null[m
+[36m@@ -1,7 +0,0 @@[m
+[31m-Click==7.0[m
+[31m-Flask==1.0.2[m
+[31m-gunicorn==19.9.0[m
+[31m-itsdangerous==1.1.0[m
+[31m-Jinja2==2.10[m
+[31m-MarkupSafe==1.1.1[m
+[31m-Werkzeug==0.14.1[m
